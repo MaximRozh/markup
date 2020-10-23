@@ -1,0 +1,84 @@
+.chevron {
+  margin: -20px 0 59px 0;
+}
+.nav_list {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_item {
+  display: inline-block;
+  vertical-align: top;
+}
+.nav_item a {
+  color: #000;
+  background: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 37px;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 30px 25px 29px 50px;
+  display: inline-block;
+  position: relative;
+}
+
+
+.nav_item:hover a {
+  background: rgba(255, 255, 255, 0.7);
+  color: #131320;
+}
+
+.nav_item:hover a:after {
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+}
+
+.nav_chevron.gradient {
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+
+.gradient a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 1);
+}
+
+.gradient a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 48px 0 48px 25px;
+  border-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) transparent;
+}
+
+.nav_chevron.gradient {
+  padding: 2px 0;
+}
+
+.gradient li {
+  margin: 0 45px 0 0;
+}
+
+.gradient li a {
+  padding-left: 40px;
+}
+
+.gradient li:hover a:before {
+  border-color: rgba(255, 255, 255, 0.7) transparent rgba(255, 255, 255, 0.7) transparent;
+}
+
+.gradient li:hover a:after {
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
+}
