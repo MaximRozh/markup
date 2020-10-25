@@ -86,7 +86,7 @@ body {
     list-style-type: disc;
   }
   
-  main {
+  .main {
     background: #eff2f8;
     flex-grow: 1;
     color: #131320;
@@ -103,8 +103,7 @@ body {
   /*заменить бордер на сокращенную версию*/
   .exmp_box {
     position: relative;
-    width: 1016px;
-    margin: 0 0 30px 48px;
+    margin: 0 48px 30px 48px;
     padding: 31px 0 32px 88px;
     line-height: 21px;
     top: -18px;
@@ -230,7 +229,7 @@ width: 293px;
   justify-content: center;
   flex-wrap: wrap;
   line-height: 21px;
-  /* второй падинг может быть 78 или 79 и инлаайн блок может не нужен*/
+  max-width: 1440px;
 }
 .box_shadow {
   filter: drop-shadow(rgba(79, 88, 178, 0.5) 0px 4px 10px);
