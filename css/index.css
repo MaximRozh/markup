@@ -1,5 +1,4 @@
 body {
-    min-width: 1440px;
     font-size: 16px;
     background: #eff2f8;
     font-family: Helvetica;
@@ -8,7 +7,6 @@ body {
     padding: 0;
     margin: 0;
   }
-  
   .wrapper {
     min-height: 100vh;
     display: flex;
@@ -110,9 +108,6 @@ body {
     clip-path: polygon(96% 0%, 100% 36%, 100% 25%, 100% 100%, 0% 100%, 0% 0%);
     border-radius: 10px;
   }
-  .text_box {
-    width: 293px;
-  }
   .info {
     position: absolute;
     left: 32px;
@@ -188,26 +183,7 @@ h6, .h6 {
   top: -27px;
   left: -2px;
 }
-.box_for_chv {
-  position: relative;
-  width: 1016px;
-  margin: 0 0 30px 48px;
-  padding: 31px 0 32px 88px;
-  line-height: 21px;
-  font-size: 16px;
-  top: -18px;
-}
-.box_for_fz {
-  position: relative;
-  width: 1016px;
-  margin: 0 0 30px 48px;
-  padding: 31px 0 32px 88px;
-  line-height: 21px;
-  font-size: 16px;
-  top: -18px;
-  clip-path: polygon(96% 0%, 100% 36%, 100% 25%, 100% 100%, 0% 100%, 0% 0%);
-  border-radius: 10px;
-}
+
 .text_box {
 width: 293px;
 }
