@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo"> <a href="index.html">mylib</a> </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="mylib.html"> Elements</a> </li>
+                    <li><a href="components.html">Components</a></li>
+                    <li><a href="#">Layouts</a></li>
+                    <li><a href="#">Drafts</a></li>
+                    <li><a href="#">Documentation</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="sidebar">
+                <div class="nav_sidebar">
+                    <ul>
+                        <li><a href="#flexbox">flexbox</a></li>
+                        <li> <a href="#"> floats</a></li>
+                        <li><a href="#">grid</a></li>
+                    </ul>
+                </div>
+            </div>
+            <main class="main">
+                <div class="headline">
+                    <h1>Layouts</h1>
+                </div>
+                <div class="exmp_box blue">
+                    <img src="img/info.png" class="info">
+                    <div class="text_box">
+                        <p class="text_box">A website is often divided into headers, menus, content and a footer. <br>
+                            <a href="https://csslayout.io/patterns"> Some website where you find Layouts</a></p>
+                    </div>
+                </div>
+                <div class="how_to_use">
+                    <div class="headings_headline" id="flexbox">
+                        <span>Flexbox</span>
+                    </div>
+                    <div class="layouts_exmp">
+                        <div class="wrapper_layouts">
+                            <header class="header_layouts">&lt;!-- Logo -- &gt;</header>
+                            <div class="container_layouts">
+                                <div class="sidebar_layouts">
+                                    sidebar
+                                </div>
+                                <main class="main_layouts">content</main>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_exmp">
+                        <div class="code_exmp_inner">
+                            <div class="code_sign"><span> HTML</span></div>
+                            <pre>
+&ltdiv class="wrapper_layouts"&gt
+    &ltheader class="header_layouts"&gt&lt;!-- Logo -- &gt;&lt/header&gt
+    &ltdiv class="container_layouts"&gt
+        &ltdiv class="sidebar_layouts"&gt
+              sidebar
+       &lt/div&gt
+       &ltmain class="main_layouts"&gtcontent&lt/main&gt
+   &lt/div&gt
+&lt/div&gt</pre>
+                        </div>
+                    </div>
+                    <div class="code_exmp">
+                        <div class="code_exmp_inner">
+                            <div class="code_sign"><span> CSS</span></div>
+                            <pre>
+.wrapper_layouts {
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
+.header_layouts {
+    background: #1F3C77;
+    flex: 0 0 80px;
+}
+ .container_layouts {
+    display: flex; 
+    flex-grow: 1;
+}
+.sidebar_layouts {
+    background: #C4C4C4;
+    flex: 0 0 240px;
+}
+.main_layouts {
+    background: #8EA5A4;
+    flex-grow: 1;
+}</pre>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
