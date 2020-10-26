@@ -27,8 +27,8 @@
             <div class="sidebar">
                 <div class="nav_sidebar">
                     <ul>
-                        <li><a href="#">Chevron menu</a></li>
-                        <li><a href="#">dropdown menu</a>
+                        <li><a href="#chev">Chevron menu</a></li>
+                        <li><a href="#dropd">dropdown menu</a>
                         <li>
                         <li><a href="#">modal box</a></li>
                         <li><a href="#">allerts</a></li>
@@ -46,7 +46,7 @@
                         Cross-browser</p>
                 </div>
                 <div class="how_to_use">
-                    <div class="chevron">
+                    <div class="chevron" id="chev">
                         <nav class="nav_chevron gradient">
                             <ul class="nav_list">
                                 <li class="nav_item">
@@ -67,8 +67,7 @@
                     <div class="code_exmp">
                         <div class="code_exmp_inner">
                             <div class="code_sign"><span> HTML</span></div>
-                            <pre>
-&ltnav class="nav-chevron gradient"&gt
+                            <pre><code>&ltnav class="nav-chevron gradient"&gt
     &ltul class="nav-list"&gt
         &ltli class="nav-item"&gt
             &lta href="#">about&lt/a&gt
@@ -83,14 +82,13 @@
             &lta href="#">contact&lt/a&gt
         &lt/li&gt
         &lt/ul&gt
-&lt/nav&gt</pre>
+&lt/nav&gt</code></pre>
                         </div>
                     </div>
                     <div class="code_exmp">
                         <div class="code_exmp_inner">
                             <div class="code_sign">CSS</div>
-                            <pre>
-.nav_list {
+                            <pre><code>.nav_list {
     text-align: right;
     padding: 0;
     margin: 0;
@@ -179,9 +177,68 @@ content: "";
 }
 .gradient li:hover a:after {
     border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
-}</pre>
+}</code></pre>
                         </div>
+                    </div>
+                    <div class="dropdown" id="dropd">
+                        <button class="dropbtn">Dropdown</button>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="code_exmp">
+                        <div class="code_exmp_inner">
+                            <div class="code_sign"><span> HTML</span></div>
+                            <pre><code>&ltdiv class="dropdown"&gt
+    &ltbutton class="dropbtn"&gtDropdown&lt/button&gt
+    &ltdiv class="dropdown-content"&gt
+        &lta href="#">Link 1&lt/a&gt
+        &lta href="#">Link 2&lt/a&gt
+        &lta href="#">Link 3&lt/a&gt
+    &lt/div&gt
+&lt/div&gt</code></pre>
 
+                        </div>
+                    </div>
+                    <div class="code_exmp">
+                        <div class="code_exmp_inner">
+                            <div class="code_sign">CSS</div>
+                            <pre> <code>.dropbtn {
+  background-color: #4f58b2;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #7d868e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #4f58b2;
+}</code></pre>
+                        </div>
 
                     </div>
 
