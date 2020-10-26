@@ -90,6 +90,15 @@
                         <div class="code_exmp_inner">
                             <div class="code_sign">CSS</div>
                             <pre>
+.nav_list {
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    }
+.nav_item {
+    display: inline-block;
+    vertical-align: top;
+}
 .nav-item a {
     color: #000;
     background: rgba(255, 255, 255, 1);
@@ -129,9 +138,6 @@ content: "";
 }
 .nav-item:hover a {
     background: rgba(255, 255, 255, 0.7);
-}
-.nav-item:hover a:after {
-    border-color: transparent transparent transparent rgba(255, 255, 255, 0.7);
 }
 .nav.gradient {
     background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
