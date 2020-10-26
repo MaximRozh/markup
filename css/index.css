@@ -73,6 +73,11 @@ body {
     position: sticky;
     top: 0;
   }
+  .components {
+    width: 165px;
+    padding: 34px 27px 80px 48px;
+
+  }
   
   .nav_sidebar li {
     margin-bottom: 16px;
